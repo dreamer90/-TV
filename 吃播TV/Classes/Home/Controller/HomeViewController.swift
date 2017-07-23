@@ -15,7 +15,6 @@ class HomeViewController: UIViewController {
 
         setupUI()
         
-        view.backgroundColor = UIColor.randomColor()
     }
 }
 
@@ -24,6 +23,7 @@ extension HomeViewController{
     
     fileprivate func setupUI(){
         setupNavigationBar()
+        setupContentView()
     }
     
     private func setupNavigationBar() {
@@ -44,6 +44,47 @@ extension HomeViewController{
         searchBar.searchBarStyle = .minimal
         let searchFiled = searchBar.value(forKey: "_searchField") as? UITextField
         searchFiled?.textColor = UIColor.white
+    }
+    
+    fileprivate func setupContentView() {
+        // 1.获取数据
+        let homeTypes = loadTypesData()
+        
+        // 2.创建主题内容
+        let style = LTBTitleStyle()
+        style.isScrollEnable = true
+        let pageFrame = CGRect(x: 0, y: kNavigationBarH + kStatusBarH, width: kScreenW, height: kScreenH - kNavigationBarH - kStatusBarH - 44)
+        /*
+         var titles = [String]()
+         for type in homeTypes {
+         titles.append(type.title)
+         }
+         */
+        
+        /*
+         let titles = homeTypes.map { (type : HomeType) -> String in
+         return type.title
+         }
+         */
+        let titles = homeTypes.map({ $0.title })
+        var childVcs = [AnchorViewController]()
+        for type in homeTypes {
+            let anchorVc = AnchorViewController()
+            anchorVc.homeType = type
+            childVcs.append(anchorVc)
+        }
+        let pageView = LTBPageView(frame: pageFrame, titles: titles, titleStyle: style, childVcs: childVcs, parentVc: self)
+        view.addSubview(pageView)
+    }
+    
+    fileprivate func loadTypesData() -> [HomeType] {
+        let path = Bundle.main.path(forResource: "types.plist", ofType: nil)!
+        let dataArray = NSArray(contentsOfFile: path) as! [[String : Any]]
+        var tempArray = [HomeType]()
+        for dict in dataArray {
+            tempArray.append(HomeType(dict: dict))
+        }
+        return tempArray
     }
 }
 

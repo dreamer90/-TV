@@ -7,6 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3BCA08225F652406A6E8CB45 /* Pods___TVTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DABDB0FF9C69318F387623BC /* Pods___TVTests.framework */; };
+		6D3194DA8FE52CDA5BB3A17B /* Pods___TVUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 893BBBD11E634C883BA850D5 /* Pods___TVUITests.framework */; };
+		84820C111F244CCD0071D417 /* types.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84820C101F244CCD0071D417 /* types.plist */; };
+		84820C1A1F244DFB0071D417 /* LTBContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84820C131F244DFB0071D417 /* LTBContentView.swift */; };
+		84820C1D1F244DFB0071D417 /* LTBTitleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84820C161F244DFB0071D417 /* LTBTitleStyle.swift */; };
+		84820C1E1F244DFB0071D417 /* LTBPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84820C171F244DFB0071D417 /* LTBPageView.swift */; };
+		84820C1F1F244DFB0071D417 /* LTBTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84820C181F244DFB0071D417 /* LTBTitleView.swift */; };
+		84820C251F2456BC0071D417 /* NetworkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84820C241F2456BC0071D417 /* NetworkTools.swift */; };
+		84820C271F2459680071D417 /* KingfisherExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84820C261F2459680071D417 /* KingfisherExtension.swift */; };
+		84820C301F245A720071D417 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84820C2A1F245A720071D417 /* Home.storyboard */; };
+		84820C311F245A720071D417 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84820C2B1F245A720071D417 /* HomeViewController.swift */; };
+		84820C321F245A720071D417 /* WaterfallLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84820C2E1F245A720071D417 /* WaterfallLayout.swift */; };
+		84820C341F245A8B0071D417 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84820C331F245A8B0071D417 /* HomeViewModel.swift */; };
+		84820C361F245B110071D417 /* HomeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84820C351F245B110071D417 /* HomeType.swift */; };
+		84820C381F245B2A0071D417 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84820C371F245B2A0071D417 /* BaseModel.swift */; };
+		84820C3A1F245BEE0071D417 /* AnchorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84820C391F245BEE0071D417 /* AnchorModel.swift */; };
+		84820C3D1F245C370071D417 /* HomeViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84820C3B1F245C370071D417 /* HomeViewCell.swift */; };
+		84820C3E1F245C370071D417 /* HomeViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84820C3C1F245C370071D417 /* HomeViewCell.xib */; };
+		84820C411F245E990071D417 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84820C401F245E990071D417 /* Const.swift */; };
+		84820C431F245F980071D417 /* AnchorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84820C421F245F980071D417 /* AnchorViewController.swift */; };
+		84820C4A1F2461BA0071D417 /* RoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84820C461F2461BA0071D417 /* RoomViewController.swift */; };
+		84820C4B1F2461BA0071D417 /* RoomViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84820C471F2461BA0071D417 /* RoomViewController.xib */; };
 		84962E251F1D87B400EFD2A1 /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84962E241F1D87B400EFD2A1 /* UIColor-Extension.swift */; };
 		84AF6EE81F1D0535004850AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AF6EE71F1D0535004850AE /* AppDelegate.swift */; };
 		84AF6EEA1F1D0535004850AE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AF6EE91F1D0535004850AE /* ViewController.swift */; };
@@ -16,12 +38,11 @@
 		84AF6EFD1F1D0536004850AE /* __TVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AF6EFC1F1D0536004850AE /* __TVTests.swift */; };
 		84AF6F081F1D0536004850AE /* __TVUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AF6F071F1D0536004850AE /* __TVUITests.swift */; };
 		84AF6F231F1D0544004850AE /* Discover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84AF6F181F1D0544004850AE /* Discover.storyboard */; };
-		84AF6F241F1D0544004850AE /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84AF6F1A1F1D0544004850AE /* Home.storyboard */; };
 		84AF6F251F1D0544004850AE /* LTBNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AF6F1D1F1D0544004850AE /* LTBNavigationController.swift */; };
 		84AF6F261F1D0544004850AE /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AF6F1E1F1D0544004850AE /* MainViewController.swift */; };
 		84AF6F271F1D0544004850AE /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84AF6F201F1D0544004850AE /* Profile.storyboard */; };
 		84AF6F281F1D0544004850AE /* Rank.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84AF6F221F1D0544004850AE /* Rank.storyboard */; };
-		84AF6F2A1F1D06B4004850AE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AF6F291F1D06B4004850AE /* HomeViewController.swift */; };
+		980487F346A3EA2AFE482F86 /* Pods___TV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DC5A264A6C353F6242D2862 /* Pods___TV.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +63,30 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0DC5A264A6C353F6242D2862 /* Pods___TV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods___TV.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C8D95E7814467ECE33C8E36 /* Pods-吃播TV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-吃播TV.release.xcconfig"; path = "Pods/Target Support Files/Pods-吃播TV/Pods-吃播TV.release.xcconfig"; sourceTree = "<group>"; };
+		51FD80D9A12560B0E07C1877 /* Pods-吃播TVTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-吃播TVTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-吃播TVTests/Pods-吃播TVTests.debug.xcconfig"; sourceTree = "<group>"; };
+		54F79F22B4F2F6746A6B3615 /* Pods-吃播TVUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-吃播TVUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-吃播TVUITests/Pods-吃播TVUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		84820C101F244CCD0071D417 /* types.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = types.plist; sourceTree = "<group>"; };
+		84820C131F244DFB0071D417 /* LTBContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTBContentView.swift; sourceTree = "<group>"; };
+		84820C161F244DFB0071D417 /* LTBTitleStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTBTitleStyle.swift; sourceTree = "<group>"; };
+		84820C171F244DFB0071D417 /* LTBPageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTBPageView.swift; sourceTree = "<group>"; };
+		84820C181F244DFB0071D417 /* LTBTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTBTitleView.swift; sourceTree = "<group>"; };
+		84820C241F2456BC0071D417 /* NetworkTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkTools.swift; sourceTree = "<group>"; };
+		84820C261F2459680071D417 /* KingfisherExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KingfisherExtension.swift; sourceTree = "<group>"; };
+		84820C2A1F245A720071D417 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		84820C2B1F245A720071D417 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		84820C2E1F245A720071D417 /* WaterfallLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaterfallLayout.swift; sourceTree = "<group>"; };
+		84820C331F245A8B0071D417 /* HomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		84820C351F245B110071D417 /* HomeType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeType.swift; sourceTree = "<group>"; };
+		84820C371F245B2A0071D417 /* BaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
+		84820C391F245BEE0071D417 /* AnchorModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnchorModel.swift; sourceTree = "<group>"; };
+		84820C3B1F245C370071D417 /* HomeViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewCell.swift; sourceTree = "<group>"; };
+		84820C3C1F245C370071D417 /* HomeViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewCell.xib; sourceTree = "<group>"; };
+		84820C401F245E990071D417 /* Const.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+		84820C421F245F980071D417 /* AnchorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnchorViewController.swift; sourceTree = "<group>"; };
+		84820C461F2461BA0071D417 /* RoomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomViewController.swift; sourceTree = "<group>"; };
+		84820C471F2461BA0071D417 /* RoomViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RoomViewController.xib; sourceTree = "<group>"; };
 		84962E241F1D87B400EFD2A1 /* UIColor-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor-Extension.swift"; sourceTree = "<group>"; };
 		84AF6EE41F1D0535004850AE /* 吃播TV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "吃播TV.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84AF6EE71F1D0535004850AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -57,12 +102,15 @@
 		84AF6F071F1D0536004850AE /* __TVUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = __TVUITests.swift; sourceTree = "<group>"; };
 		84AF6F091F1D0536004850AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84AF6F181F1D0544004850AE /* Discover.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Discover.storyboard; sourceTree = "<group>"; };
-		84AF6F1A1F1D0544004850AE /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		84AF6F1D1F1D0544004850AE /* LTBNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTBNavigationController.swift; sourceTree = "<group>"; };
 		84AF6F1E1F1D0544004850AE /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		84AF6F201F1D0544004850AE /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		84AF6F221F1D0544004850AE /* Rank.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Rank.storyboard; sourceTree = "<group>"; };
-		84AF6F291F1D06B4004850AE /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		8730AA72543A9CF28DED211B /* Pods-吃播TV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-吃播TV.debug.xcconfig"; path = "Pods/Target Support Files/Pods-吃播TV/Pods-吃播TV.debug.xcconfig"; sourceTree = "<group>"; };
+		893BBBD11E634C883BA850D5 /* Pods___TVUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods___TVUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AF50BBC3AFE5F321B8BBFCF /* Pods-吃播TVTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-吃播TVTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-吃播TVTests/Pods-吃播TVTests.release.xcconfig"; sourceTree = "<group>"; };
+		BDF63499669CC4B84E6B78D3 /* Pods-吃播TVUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-吃播TVUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-吃播TVUITests/Pods-吃播TVUITests.release.xcconfig"; sourceTree = "<group>"; };
+		DABDB0FF9C69318F387623BC /* Pods___TVTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods___TVTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +118,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				980487F346A3EA2AFE482F86 /* Pods___TV.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +126,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BCA08225F652406A6E8CB45 /* Pods___TVTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,12 +134,153 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D3194DA8FE52CDA5BB3A17B /* Pods___TVUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3CA6B088C8AB2286429CC333 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8730AA72543A9CF28DED211B /* Pods-吃播TV.debug.xcconfig */,
+				1C8D95E7814467ECE33C8E36 /* Pods-吃播TV.release.xcconfig */,
+				51FD80D9A12560B0E07C1877 /* Pods-吃播TVTests.debug.xcconfig */,
+				8AF50BBC3AFE5F321B8BBFCF /* Pods-吃播TVTests.release.xcconfig */,
+				54F79F22B4F2F6746A6B3615 /* Pods-吃播TVUITests.debug.xcconfig */,
+				BDF63499669CC4B84E6B78D3 /* Pods-吃播TVUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7B0333F00FEC3A2AA5F40517 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0DC5A264A6C353F6242D2862 /* Pods___TV.framework */,
+				DABDB0FF9C69318F387623BC /* Pods___TVTests.framework */,
+				893BBBD11E634C883BA850D5 /* Pods___TVUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		84820C0F1F244CCD0071D417 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				84820C101F244CCD0071D417 /* types.plist */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		84820C121F244DFB0071D417 /* LTBPageView */ = {
+			isa = PBXGroup;
+			children = (
+				84820C131F244DFB0071D417 /* LTBContentView.swift */,
+				84820C161F244DFB0071D417 /* LTBTitleStyle.swift */,
+				84820C171F244DFB0071D417 /* LTBPageView.swift */,
+				84820C181F244DFB0071D417 /* LTBTitleView.swift */,
+			);
+			path = LTBPageView;
+			sourceTree = "<group>";
+		};
+		84820C231F2455D70071D417 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				84820C241F2456BC0071D417 /* NetworkTools.swift */,
+				84820C261F2459680071D417 /* KingfisherExtension.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		84820C281F245A720071D417 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				84820C291F245A720071D417 /* Controller */,
+				84820C2C1F245A720071D417 /* Model */,
+				84820C2D1F245A720071D417 /* Other */,
+				84820C2F1F245A720071D417 /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		84820C291F245A720071D417 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				84820C2A1F245A720071D417 /* Home.storyboard */,
+				84820C2B1F245A720071D417 /* HomeViewController.swift */,
+				84820C421F245F980071D417 /* AnchorViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		84820C2C1F245A720071D417 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				84820C351F245B110071D417 /* HomeType.swift */,
+				84820C391F245BEE0071D417 /* AnchorModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		84820C2D1F245A720071D417 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				84820C2E1F245A720071D417 /* WaterfallLayout.swift */,
+				84820C331F245A8B0071D417 /* HomeViewModel.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		84820C2F1F245A720071D417 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				84820C3B1F245C370071D417 /* HomeViewCell.swift */,
+				84820C3C1F245C370071D417 /* HomeViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		84820C3F1F245E810071D417 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				84820C401F245E990071D417 /* Const.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		84820C441F2461BA0071D417 /* Live */ = {
+			isa = PBXGroup;
+			children = (
+				84820C451F2461BA0071D417 /* Controller */,
+				84820C481F2461BA0071D417 /* Model */,
+				84820C491F2461BA0071D417 /* View */,
+			);
+			path = Live;
+			sourceTree = "<group>";
+		};
+		84820C451F2461BA0071D417 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				84820C461F2461BA0071D417 /* RoomViewController.swift */,
+				84820C471F2461BA0071D417 /* RoomViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		84820C481F2461BA0071D417 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		84820C491F2461BA0071D417 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		84962E231F1D879200EFD2A1 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +296,8 @@
 				84AF6EFB1F1D0536004850AE /* 吃播TVTests */,
 				84AF6F061F1D0536004850AE /* 吃播TVUITests */,
 				84AF6EE51F1D0535004850AE /* Products */,
+				3CA6B088C8AB2286429CC333 /* Pods */,
+				7B0333F00FEC3A2AA5F40517 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -153,12 +346,15 @@
 		84AF6F151F1D0544004850AE /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				84820C0F1F244CCD0071D417 /* Resource */,
 				84AF6F1B1F1D0544004850AE /* Main */,
 				84AF6F161F1D0544004850AE /* Base */,
-				84AF6F191F1D0544004850AE /* Home */,
+				84820C441F2461BA0071D417 /* Live */,
+				84820C281F245A720071D417 /* Home */,
 				84AF6F211F1D0544004850AE /* Rank */,
 				84AF6F171F1D0544004850AE /* Discover */,
 				84AF6F1F1F1D0544004850AE /* Profile */,
+				84820C231F2455D70071D417 /* Tools */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -166,6 +362,7 @@
 		84AF6F161F1D0544004850AE /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				84820C371F245B2A0071D417 /* BaseModel.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -178,18 +375,11 @@
 			path = Discover;
 			sourceTree = "<group>";
 		};
-		84AF6F191F1D0544004850AE /* Home */ = {
-			isa = PBXGroup;
-			children = (
-				84AF6F1A1F1D0544004850AE /* Home.storyboard */,
-				84AF6F291F1D06B4004850AE /* HomeViewController.swift */,
-			);
-			path = Home;
-			sourceTree = "<group>";
-		};
 		84AF6F1B1F1D0544004850AE /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				84820C3F1F245E810071D417 /* Common */,
+				84820C121F244DFB0071D417 /* LTBPageView */,
 				84962E231F1D879200EFD2A1 /* Extension */,
 				84AF6F1C1F1D0544004850AE /* Controller */,
 			);
@@ -228,9 +418,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84AF6F0C1F1D0536004850AE /* Build configuration list for PBXNativeTarget "吃播TV" */;
 			buildPhases = (
+				739FA0FE297CB7478E4D8788 /* [CP] Check Pods Manifest.lock */,
 				84AF6EE01F1D0535004850AE /* Sources */,
 				84AF6EE11F1D0535004850AE /* Frameworks */,
 				84AF6EE21F1D0535004850AE /* Resources */,
+				696FF88E5A2724F9B0231CA7 /* [CP] Embed Pods Frameworks */,
+				6D08ACEC71D31CC993442264 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -245,9 +438,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84AF6F0F1F1D0536004850AE /* Build configuration list for PBXNativeTarget "吃播TVTests" */;
 			buildPhases = (
+				9A572D7FBCDB52F73EEFBD2B /* [CP] Check Pods Manifest.lock */,
 				84AF6EF41F1D0536004850AE /* Sources */,
 				84AF6EF51F1D0536004850AE /* Frameworks */,
 				84AF6EF61F1D0536004850AE /* Resources */,
+				B66DB868D55A9BAFAF6944D6 /* [CP] Embed Pods Frameworks */,
+				221D07600ED80020F6B51114 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -263,9 +459,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84AF6F121F1D0536004850AE /* Build configuration list for PBXNativeTarget "吃播TVUITests" */;
 			buildPhases = (
+				30F1B59B325A7B1AF2CA811F /* [CP] Check Pods Manifest.lock */,
 				84AF6EFF1F1D0536004850AE /* Sources */,
 				84AF6F001F1D0536004850AE /* Frameworks */,
 				84AF6F011F1D0536004850AE /* Resources */,
+				4E3B8CBC9D533F457E3A0108 /* [CP] Embed Pods Frameworks */,
+				FCF5173311BD73F99F2EDDAA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -330,8 +529,11 @@
 			files = (
 				84AF6F271F1D0544004850AE /* Profile.storyboard in Resources */,
 				84AF6F281F1D0544004850AE /* Rank.storyboard in Resources */,
+				84820C111F244CCD0071D417 /* types.plist in Resources */,
+				84820C3E1F245C370071D417 /* HomeViewCell.xib in Resources */,
+				84820C301F245A720071D417 /* Home.storyboard in Resources */,
+				84820C4B1F2461BA0071D417 /* RoomViewController.xib in Resources */,
 				84AF6EF21F1D0536004850AE /* LaunchScreen.storyboard in Resources */,
-				84AF6F241F1D0544004850AE /* Home.storyboard in Resources */,
 				84AF6F231F1D0544004850AE /* Discover.storyboard in Resources */,
 				84AF6EEF1F1D0536004850AE /* Assets.xcassets in Resources */,
 				84AF6EED1F1D0536004850AE /* Main.storyboard in Resources */,
@@ -354,17 +556,184 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		221D07600ED80020F6B51114 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-吃播TVTests/Pods-吃播TVTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		30F1B59B325A7B1AF2CA811F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-吃播TVUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4E3B8CBC9D533F457E3A0108 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-吃播TVUITests/Pods-吃播TVUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		696FF88E5A2724F9B0231CA7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-吃播TV/Pods-吃播TV-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-吃播TV/Pods-吃播TV-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D08ACEC71D31CC993442264 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-吃播TV/Pods-吃播TV-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		739FA0FE297CB7478E4D8788 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-吃播TV-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9A572D7FBCDB52F73EEFBD2B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-吃播TVTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B66DB868D55A9BAFAF6944D6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-吃播TVTests/Pods-吃播TVTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FCF5173311BD73F99F2EDDAA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-吃播TVUITests/Pods-吃播TVUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		84AF6EE01F1D0535004850AE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84AF6F2A1F1D06B4004850AE /* HomeViewController.swift in Sources */,
+				84820C1E1F244DFB0071D417 /* LTBPageView.swift in Sources */,
+				84820C411F245E990071D417 /* Const.swift in Sources */,
 				84962E251F1D87B400EFD2A1 /* UIColor-Extension.swift in Sources */,
+				84820C431F245F980071D417 /* AnchorViewController.swift in Sources */,
+				84820C1A1F244DFB0071D417 /* LTBContentView.swift in Sources */,
+				84820C311F245A720071D417 /* HomeViewController.swift in Sources */,
 				84AF6EEA1F1D0535004850AE /* ViewController.swift in Sources */,
 				84AF6EE81F1D0535004850AE /* AppDelegate.swift in Sources */,
+				84820C381F245B2A0071D417 /* BaseModel.swift in Sources */,
+				84820C4A1F2461BA0071D417 /* RoomViewController.swift in Sources */,
+				84820C271F2459680071D417 /* KingfisherExtension.swift in Sources */,
+				84820C361F245B110071D417 /* HomeType.swift in Sources */,
+				84820C1F1F244DFB0071D417 /* LTBTitleView.swift in Sources */,
+				84820C251F2456BC0071D417 /* NetworkTools.swift in Sources */,
+				84820C341F245A8B0071D417 /* HomeViewModel.swift in Sources */,
 				84AF6F251F1D0544004850AE /* LTBNavigationController.swift in Sources */,
 				84AF6F261F1D0544004850AE /* MainViewController.swift in Sources */,
+				84820C321F245A720071D417 /* WaterfallLayout.swift in Sources */,
+				84820C1D1F244DFB0071D417 /* LTBTitleStyle.swift in Sources */,
+				84820C3A1F245BEE0071D417 /* AnchorModel.swift in Sources */,
+				84820C3D1F245C370071D417 /* HomeViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -514,6 +883,7 @@
 		};
 		84AF6F0D1F1D0536004850AE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8730AA72543A9CF28DED211B /* Pods-吃播TV.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "吃播TV/Info.plist";
@@ -526,6 +896,7 @@
 		};
 		84AF6F0E1F1D0536004850AE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C8D95E7814467ECE33C8E36 /* Pods-吃播TV.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "吃播TV/Info.plist";
@@ -538,6 +909,7 @@
 		};
 		84AF6F101F1D0536004850AE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51FD80D9A12560B0E07C1877 /* Pods-吃播TVTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -552,6 +924,7 @@
 		};
 		84AF6F111F1D0536004850AE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8AF50BBC3AFE5F321B8BBFCF /* Pods-吃播TVTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -566,6 +939,7 @@
 		};
 		84AF6F131F1D0536004850AE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54F79F22B4F2F6746A6B3615 /* Pods-吃播TVUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = "吃播TVUITests/Info.plist";
@@ -579,6 +953,7 @@
 		};
 		84AF6F141F1D0536004850AE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BDF63499669CC4B84E6B78D3 /* Pods-吃播TVUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = "吃播TVUITests/Info.plist";
