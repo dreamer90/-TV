@@ -2,57 +2,59 @@
 //  LTBContentView.swift
 //  LTBPageView
 //
-//  Created by hyfsoft on 2017/7/20.
+//  Created by LTBfsoft on 2017/7/20.
 //  Copyright © 2017年 LvJing. All rights reserved.
 //
 
 import UIKit
 
-private let kContentCellID = "kContentCellID"
-
-protocol LTBContentViewDelegate : class{
-    func contentView(_ contentView : LTBContentView, targetIndex : Int, progress : CGFloat)
-    func contentView(_ contentView : LTBContentView, endScroll inIndex : Int)
+@objc protocol LTBContentViewDelegate : class {
+    func contentView(_ contentView : LTBContentView, progress : CGFloat, sourceIndex : Int, targetIndex : Int)
+    
+    @objc optional func contentViewEndScroll(_ contentView : LTBContentView)
 }
 
-class LTBContentView: UIView {
+private let kContentCellID = "kContentCellID"
 
-    // MARK:- 定义属性
+class LTBContentView: UIView {
+    
+    // MARK: 对外属性
     weak var delegate : LTBContentViewDelegate?
     
-    fileprivate var childVcs : [UIViewController]
-    fileprivate var patentVc : UIViewController
+    // MARK: 定义属性
+    fileprivate var childVcs : [UIViewController]!
+    fileprivate weak var parentVc : UIViewController!
+    fileprivate var isForbidScrollDelegate : Bool = false
+    fileprivate var startOffsetX : CGFloat = 0
     
-    fileprivate lazy var startOffsetX : CGFloat = 0
-    fileprivate lazy var isForbidDelegate : Bool = false
+    // MARK: 控件属性
     fileprivate lazy var collectionView : UICollectionView = {
-    
         let layout = UICollectionViewFlowLayout()
+        layout.itemSize = self.bounds.size
         layout.minimumLineSpacing = 0
         layout.minimumInteritemSpacing = 0
         layout.scrollDirection = .horizontal
-        layout.itemSize = self.bounds.size
         
         let collectionView = UICollectionView(frame: self.bounds, collectionViewLayout: layout)
+        collectionView.scrollsToTop = false
+        collectionView.bounces = false
+        collectionView.showsHorizontalScrollIndicator = false
+        collectionView.frame = self.bounds
+        collectionView.isPagingEnabled = true
         collectionView.dataSource = self
         collectionView.delegate = self
         collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: kContentCellID)
-        collectionView.isPagingEnabled = true
-        collectionView.scrollsToTop = false
-        collectionView.showsHorizontalScrollIndicator = false
-        collectionView.bounces = false
+        collectionView.backgroundColor = UIColor.clear
         
         return collectionView
     }()
-
     
-    // MARK:- 构造函数
-    init(frame: CGRect, childVcs: [UIViewController], patentVc: UIViewController) {
+    // MARK: 构造函数
+    init(frame: CGRect, childVcs : [UIViewController], parentViewController : UIViewController) {
+        super.init(frame: frame)
         
         self.childVcs = childVcs
-        self.patentVc = patentVc
-        
-        super.init(frame: frame)
+        self.parentVc = parentViewController
         
         setupUI()
     }
@@ -63,120 +65,124 @@ class LTBContentView: UIView {
 }
 
 
-// MARK:- 设置UI
+// MARK:- 设置界面内容
 extension LTBContentView {
-    
     fileprivate func setupUI() {
-        // 1.将childVc添加到父控制器中
+        // 1.将所有的控制器添加到父控制器中
         for vc in childVcs {
-            patentVc.addChildViewController(vc)
+            parentVc.addChildViewController(vc)
         }
-        // 2.初始化用于显示子控制器View的View（UIScrollView/UICollectionView）
+        
+        // 2.添加UICollectionView
         addSubview(collectionView)
     }
 }
 
-// MARK:- 遵守UICollectionViewDataSource协议
-extension LTBContentView : UICollectionViewDataSource {
 
+// MARK:- 设置UICollectionView的数据源
+extension LTBContentView : UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return childVcs.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        
+        // 1.获取Cell
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kContentCellID, for: indexPath)
         
+        // 2.设置cell的内容
         for subview in cell.contentView.subviews {
             subview.removeFromSuperview()
         }
         
-        let vc = childVcs[indexPath.item]
-        vc.view.frame = cell.contentView.bounds
-        cell.contentView.addSubview(vc.view)
+        let childVc = childVcs[indexPath.item]
+        childVc.view.frame = cell.contentView.bounds
+        cell.contentView.addSubview(childVc.view)
         
         return cell
     }
 }
 
-// MARK:- 遵守UICollectionViewDelegate协议
+
+// MARK:- 设置UICollectionView的代理
 extension LTBContentView : UICollectionViewDelegate {
+    func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
+        
+        isForbidScrollDelegate = false
+        
+        startOffsetX = scrollView.contentOffset.x
+    }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        // 0.判断是否是点击事件
+        if isForbidScrollDelegate { return }
+        
+        // 1.定义获取需要的数据
+        var progress : CGFloat = 0
+        var sourceIndex : Int = 0
+        var targetIndex : Int = 0
+        
+        // 2.判断是左滑还是右滑
+        let currentOffsetX = scrollView.contentOffset.x
+        let scrollViewW = scrollView.bounds.width
+        if currentOffsetX > startOffsetX { // 左滑
+            // 1.计算progress
+            progress = currentOffsetX / scrollViewW - floor(currentOffsetX / scrollViewW)
+            
+            // 2.计算sourceIndex
+            sourceIndex = Int(currentOffsetX / scrollViewW)
+            
+            // 3.计算targetIndex
+            targetIndex = sourceIndex + 1
+            if targetIndex >= childVcs.count {
+                targetIndex = childVcs.count - 1
+            }
+            
+            // 4.如果完全划过去
+            if currentOffsetX - startOffsetX == scrollViewW {
+                progress = 1
+                targetIndex = sourceIndex
+            }
+        } else { // 右滑
+            // 1.计算progress
+            progress = 1 - (currentOffsetX / scrollViewW - floor(currentOffsetX / scrollViewW))
+            
+            // 2.计算targetIndex
+            targetIndex = Int(currentOffsetX / scrollViewW)
+            
+            // 3.计算sourceIndex
+            sourceIndex = targetIndex + 1
+            if sourceIndex >= childVcs.count {
+                sourceIndex = childVcs.count - 1
+            }
+        }
+        
+        // 3.将progress/sourceIndex/targetIndex传递给titleView
+        delegate?.contentView(self, progress: progress, sourceIndex: sourceIndex, targetIndex: targetIndex)
+    }
+    
+    
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
-        collectionViewEndScroll()
+        delegate?.contentViewEndScroll?(self)
     }
     
     func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
         if !decelerate {
-            collectionViewEndScroll()
+            delegate?.contentViewEndScroll?(self)
         }
-    }
-    
-    private func collectionViewEndScroll() {
-        // 1.获取结束时，对应的indexPath
-        let endIndex = Int(collectionView.contentOffset.x / collectionView.bounds.width)
-        
-        // 2.通知titleView改变下标
-        delegate?.contentView(self, endScroll: endIndex)
-    }
-    
-    func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
-        // 记录开始的位置
-        isForbidDelegate = false
-        startOffsetX = scrollView.contentOffset.x
-    }
-    
-    func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
-    }
-    
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        if scrollView.contentOffset.x == startOffsetX || isForbidDelegate { return }
-        
-        // 1.定义目标的index、进度
-        var targetIndex : Int = 0
-        var progress : CGFloat = 0
-        
-        // 2.判断用户是左滑还是右滑
-        if scrollView.contentOffset.x > startOffsetX { // 左滑
-            targetIndex = Int(startOffsetX / scrollView.bounds.width) + 1
-            if targetIndex >= childVcs.count {
-                targetIndex = childVcs.count - 1
-            }
-            progress = (scrollView.contentOffset.x - startOffsetX) / scrollView.bounds.width
-        } else { // 右滑
-            targetIndex = Int(startOffsetX / scrollView.bounds.width) - 1
-            if targetIndex < 0 {
-                targetIndex = 0
-            }
-            progress = (startOffsetX - scrollView.contentOffset.x) / scrollView.bounds.width
-        }
-        
-        // 3.将数据传递给titleView
-        delegate?.contentView(self, targetIndex: targetIndex, progress: progress)
-    }
-    
-}
-
-
-// MARK:- 遵守HYTitleViewDelegate协议
-extension LTBContentView : LTBTitleViewDelegate {
-    
-    func titleView(_ titleView: LTBTitleView, currentIndex: Int) {
-        isForbidDelegate = true
-        
-        let indexPath = IndexPath(item: currentIndex, section: 0)
-        collectionView.scrollToItem(at: indexPath, at: .left, animated: false)
     }
 }
 
-
-
-
-
-
-
-
-
-
-
+// MARK:- 对外暴露的方法
+extension LTBContentView {
+    func setCurrentIndex(_ currentIndex : Int) {
+        
+        // 1.记录需要进制执行代理方法
+        isForbidScrollDelegate = true
+        
+        // 2.滚动正确的位置
+        let offsetX = CGFloat(currentIndex) * collectionView.frame.width
+        collectionView.setContentOffset(CGPoint(x: offsetX, y: 0), animated: false)
+    }
+}
 
 

@@ -29,6 +29,26 @@
 		84820C431F245F980071D417 /* AnchorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84820C421F245F980071D417 /* AnchorViewController.swift */; };
 		84820C4A1F2461BA0071D417 /* RoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84820C461F2461BA0071D417 /* RoomViewController.swift */; };
 		84820C4B1F2461BA0071D417 /* RoomViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84820C471F2461BA0071D417 /* RoomViewController.xib */; };
+		8483C28E1F25672D0019CB69 /* LTBPageCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8483C28D1F25672D0019CB69 /* LTBPageCollectionViewLayout.swift */; };
+		8483C2901F256B6C0019CB69 /* LTBPageCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8483C28F1F256B6C0019CB69 /* LTBPageCollectionView.swift */; };
+		8483C2931F25730E0019CB69 /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8483C2921F25730E0019CB69 /* NibLoadable.swift */; };
+		8483C2951F2573AC0019CB69 /* Emitterable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8483C2941F2573AC0019CB69 /* Emitterable.swift */; };
+		8483C2971F2575330019CB69 /* NSData-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8483C2961F2575330019CB69 /* NSData-Extension.swift */; };
+		8483C29A1F2576010019CB69 /* GiftModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8483C2991F2576010019CB69 /* GiftModel.swift */; };
+		8483C29C1F2576330019CB69 /* GiftPackage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8483C29B1F2576330019CB69 /* GiftPackage.swift */; };
+		8483C29E1F25767B0019CB69 /* Emoticon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8483C29D1F25767B0019CB69 /* Emoticon.swift */; };
+		8483C2A01F2576980019CB69 /* EmoticonPackage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8483C29F1F2576980019CB69 /* EmoticonPackage.swift */; };
+		8483C2A21F2576FB0019CB69 /* GiftViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8483C2A11F2576FB0019CB69 /* GiftViewModel.swift */; };
+		8483C2A41F2577880019CB69 /* EmoticonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8483C2A31F2577880019CB69 /* EmoticonViewModel.swift */; };
+		8483C2B01F2577F00019CB69 /* ChatToolsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8483C2A61F2577F00019CB69 /* ChatToolsView.swift */; };
+		8483C2B11F2577F00019CB69 /* ChatToolsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8483C2A71F2577F00019CB69 /* ChatToolsView.xib */; };
+		8483C2B21F2577F00019CB69 /* EmoticonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8483C2A81F2577F00019CB69 /* EmoticonView.swift */; };
+		8483C2B31F2577F00019CB69 /* EmoticonViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8483C2A91F2577F00019CB69 /* EmoticonViewCell.swift */; };
+		8483C2B41F2577F00019CB69 /* EmoticonViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8483C2AA1F2577F00019CB69 /* EmoticonViewCell.xib */; };
+		8483C2B51F2577F00019CB69 /* GiftListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8483C2AC1F2577F00019CB69 /* GiftListView.swift */; };
+		8483C2B61F2577F00019CB69 /* GiftListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8483C2AD1F2577F00019CB69 /* GiftListView.xib */; };
+		8483C2B71F2577F00019CB69 /* GiftViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8483C2AE1F2577F00019CB69 /* GiftViewCell.swift */; };
+		8483C2B81F2577F00019CB69 /* GiftViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8483C2AF1F2577F00019CB69 /* GiftViewCell.xib */; };
 		84962E251F1D87B400EFD2A1 /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84962E241F1D87B400EFD2A1 /* UIColor-Extension.swift */; };
 		84AF6EE81F1D0535004850AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AF6EE71F1D0535004850AE /* AppDelegate.swift */; };
 		84AF6EEA1F1D0535004850AE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AF6EE91F1D0535004850AE /* ViewController.swift */; };
@@ -87,6 +107,26 @@
 		84820C421F245F980071D417 /* AnchorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnchorViewController.swift; sourceTree = "<group>"; };
 		84820C461F2461BA0071D417 /* RoomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomViewController.swift; sourceTree = "<group>"; };
 		84820C471F2461BA0071D417 /* RoomViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RoomViewController.xib; sourceTree = "<group>"; };
+		8483C28D1F25672D0019CB69 /* LTBPageCollectionViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTBPageCollectionViewLayout.swift; sourceTree = "<group>"; };
+		8483C28F1F256B6C0019CB69 /* LTBPageCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTBPageCollectionView.swift; sourceTree = "<group>"; };
+		8483C2921F25730E0019CB69 /* NibLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
+		8483C2941F2573AC0019CB69 /* Emitterable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Emitterable.swift; sourceTree = "<group>"; };
+		8483C2961F2575330019CB69 /* NSData-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSData-Extension.swift"; sourceTree = "<group>"; };
+		8483C2991F2576010019CB69 /* GiftModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiftModel.swift; sourceTree = "<group>"; };
+		8483C29B1F2576330019CB69 /* GiftPackage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiftPackage.swift; sourceTree = "<group>"; };
+		8483C29D1F25767B0019CB69 /* Emoticon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Emoticon.swift; sourceTree = "<group>"; };
+		8483C29F1F2576980019CB69 /* EmoticonPackage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonPackage.swift; sourceTree = "<group>"; };
+		8483C2A11F2576FB0019CB69 /* GiftViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiftViewModel.swift; sourceTree = "<group>"; };
+		8483C2A31F2577880019CB69 /* EmoticonViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonViewModel.swift; sourceTree = "<group>"; };
+		8483C2A61F2577F00019CB69 /* ChatToolsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatToolsView.swift; sourceTree = "<group>"; };
+		8483C2A71F2577F00019CB69 /* ChatToolsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatToolsView.xib; sourceTree = "<group>"; };
+		8483C2A81F2577F00019CB69 /* EmoticonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonView.swift; sourceTree = "<group>"; };
+		8483C2A91F2577F00019CB69 /* EmoticonViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonViewCell.swift; sourceTree = "<group>"; };
+		8483C2AA1F2577F00019CB69 /* EmoticonViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmoticonViewCell.xib; sourceTree = "<group>"; };
+		8483C2AC1F2577F00019CB69 /* GiftListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiftListView.swift; sourceTree = "<group>"; };
+		8483C2AD1F2577F00019CB69 /* GiftListView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GiftListView.xib; sourceTree = "<group>"; };
+		8483C2AE1F2577F00019CB69 /* GiftViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiftViewCell.swift; sourceTree = "<group>"; };
+		8483C2AF1F2577F00019CB69 /* GiftViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GiftViewCell.xib; sourceTree = "<group>"; };
 		84962E241F1D87B400EFD2A1 /* UIColor-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor-Extension.swift"; sourceTree = "<group>"; };
 		84AF6EE41F1D0535004850AE /* 吃播TV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "吃播TV.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84AF6EE71F1D0535004850AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -179,6 +219,8 @@
 				84820C161F244DFB0071D417 /* LTBTitleStyle.swift */,
 				84820C171F244DFB0071D417 /* LTBPageView.swift */,
 				84820C181F244DFB0071D417 /* LTBTitleView.swift */,
+				8483C28D1F25672D0019CB69 /* LTBPageCollectionViewLayout.swift */,
+				8483C28F1F256B6C0019CB69 /* LTBPageCollectionView.swift */,
 			);
 			path = LTBPageView;
 			sourceTree = "<group>";
@@ -251,6 +293,7 @@
 		84820C441F2461BA0071D417 /* Live */ = {
 			isa = PBXGroup;
 			children = (
+				8483C2981F2575790019CB69 /* ViewModel */,
 				84820C451F2461BA0071D417 /* Controller */,
 				84820C481F2461BA0071D417 /* Model */,
 				84820C491F2461BA0071D417 /* View */,
@@ -270,6 +313,10 @@
 		84820C481F2461BA0071D417 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8483C2991F2576010019CB69 /* GiftModel.swift */,
+				8483C29B1F2576330019CB69 /* GiftPackage.swift */,
+				8483C29D1F25767B0019CB69 /* Emoticon.swift */,
+				8483C29F1F2576980019CB69 /* EmoticonPackage.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -277,14 +324,58 @@
 		84820C491F2461BA0071D417 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8483C2A51F2577F00019CB69 /* ChatView */,
+				8483C2AB1F2577F00019CB69 /* GiftView */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		8483C2911F2572E10019CB69 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				8483C2921F25730E0019CB69 /* NibLoadable.swift */,
+				8483C2941F2573AC0019CB69 /* Emitterable.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		8483C2981F2575790019CB69 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8483C2A11F2576FB0019CB69 /* GiftViewModel.swift */,
+				8483C2A31F2577880019CB69 /* EmoticonViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8483C2A51F2577F00019CB69 /* ChatView */ = {
+			isa = PBXGroup;
+			children = (
+				8483C2A61F2577F00019CB69 /* ChatToolsView.swift */,
+				8483C2A71F2577F00019CB69 /* ChatToolsView.xib */,
+				8483C2A81F2577F00019CB69 /* EmoticonView.swift */,
+				8483C2A91F2577F00019CB69 /* EmoticonViewCell.swift */,
+				8483C2AA1F2577F00019CB69 /* EmoticonViewCell.xib */,
+			);
+			path = ChatView;
+			sourceTree = "<group>";
+		};
+		8483C2AB1F2577F00019CB69 /* GiftView */ = {
+			isa = PBXGroup;
+			children = (
+				8483C2AC1F2577F00019CB69 /* GiftListView.swift */,
+				8483C2AD1F2577F00019CB69 /* GiftListView.xib */,
+				8483C2AE1F2577F00019CB69 /* GiftViewCell.swift */,
+				8483C2AF1F2577F00019CB69 /* GiftViewCell.xib */,
+			);
+			path = GiftView;
 			sourceTree = "<group>";
 		};
 		84962E231F1D879200EFD2A1 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
 				84962E241F1D87B400EFD2A1 /* UIColor-Extension.swift */,
+				8483C2961F2575330019CB69 /* NSData-Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -378,6 +469,7 @@
 		84AF6F1B1F1D0544004850AE /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				8483C2911F2572E10019CB69 /* Protocol */,
 				84820C3F1F245E810071D417 /* Common */,
 				84820C121F244DFB0071D417 /* LTBPageView */,
 				84962E231F1D879200EFD2A1 /* Extension */,
@@ -527,13 +619,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8483C2B11F2577F00019CB69 /* ChatToolsView.xib in Resources */,
+				8483C2B61F2577F00019CB69 /* GiftListView.xib in Resources */,
 				84AF6F271F1D0544004850AE /* Profile.storyboard in Resources */,
+				8483C2B41F2577F00019CB69 /* EmoticonViewCell.xib in Resources */,
 				84AF6F281F1D0544004850AE /* Rank.storyboard in Resources */,
 				84820C111F244CCD0071D417 /* types.plist in Resources */,
 				84820C3E1F245C370071D417 /* HomeViewCell.xib in Resources */,
 				84820C301F245A720071D417 /* Home.storyboard in Resources */,
 				84820C4B1F2461BA0071D417 /* RoomViewController.xib in Resources */,
 				84AF6EF21F1D0536004850AE /* LaunchScreen.storyboard in Resources */,
+				8483C2B81F2577F00019CB69 /* GiftViewCell.xib in Resources */,
 				84AF6F231F1D0544004850AE /* Discover.storyboard in Resources */,
 				84AF6EEF1F1D0536004850AE /* Assets.xcassets in Resources */,
 				84AF6EED1F1D0536004850AE /* Main.storyboard in Resources */,
@@ -714,26 +810,42 @@
 			buildActionMask = 2147483647;
 			files = (
 				84820C1E1F244DFB0071D417 /* LTBPageView.swift in Sources */,
+				8483C2951F2573AC0019CB69 /* Emitterable.swift in Sources */,
+				8483C2A01F2576980019CB69 /* EmoticonPackage.swift in Sources */,
 				84820C411F245E990071D417 /* Const.swift in Sources */,
+				8483C29A1F2576010019CB69 /* GiftModel.swift in Sources */,
+				8483C28E1F25672D0019CB69 /* LTBPageCollectionViewLayout.swift in Sources */,
 				84962E251F1D87B400EFD2A1 /* UIColor-Extension.swift in Sources */,
+				8483C2B71F2577F00019CB69 /* GiftViewCell.swift in Sources */,
+				8483C2B31F2577F00019CB69 /* EmoticonViewCell.swift in Sources */,
 				84820C431F245F980071D417 /* AnchorViewController.swift in Sources */,
 				84820C1A1F244DFB0071D417 /* LTBContentView.swift in Sources */,
 				84820C311F245A720071D417 /* HomeViewController.swift in Sources */,
 				84AF6EEA1F1D0535004850AE /* ViewController.swift in Sources */,
 				84AF6EE81F1D0535004850AE /* AppDelegate.swift in Sources */,
+				8483C29E1F25767B0019CB69 /* Emoticon.swift in Sources */,
+				8483C2931F25730E0019CB69 /* NibLoadable.swift in Sources */,
 				84820C381F245B2A0071D417 /* BaseModel.swift in Sources */,
+				8483C2B01F2577F00019CB69 /* ChatToolsView.swift in Sources */,
 				84820C4A1F2461BA0071D417 /* RoomViewController.swift in Sources */,
 				84820C271F2459680071D417 /* KingfisherExtension.swift in Sources */,
+				8483C2A21F2576FB0019CB69 /* GiftViewModel.swift in Sources */,
 				84820C361F245B110071D417 /* HomeType.swift in Sources */,
 				84820C1F1F244DFB0071D417 /* LTBTitleView.swift in Sources */,
+				8483C2B51F2577F00019CB69 /* GiftListView.swift in Sources */,
 				84820C251F2456BC0071D417 /* NetworkTools.swift in Sources */,
 				84820C341F245A8B0071D417 /* HomeViewModel.swift in Sources */,
+				8483C2971F2575330019CB69 /* NSData-Extension.swift in Sources */,
 				84AF6F251F1D0544004850AE /* LTBNavigationController.swift in Sources */,
 				84AF6F261F1D0544004850AE /* MainViewController.swift in Sources */,
 				84820C321F245A720071D417 /* WaterfallLayout.swift in Sources */,
 				84820C1D1F244DFB0071D417 /* LTBTitleStyle.swift in Sources */,
+				8483C2B21F2577F00019CB69 /* EmoticonView.swift in Sources */,
 				84820C3A1F245BEE0071D417 /* AnchorModel.swift in Sources */,
+				8483C2A41F2577880019CB69 /* EmoticonViewModel.swift in Sources */,
 				84820C3D1F245C370071D417 /* HomeViewCell.swift in Sources */,
+				8483C29C1F2576330019CB69 /* GiftPackage.swift in Sources */,
+				8483C2901F256B6C0019CB69 /* LTBPageCollectionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

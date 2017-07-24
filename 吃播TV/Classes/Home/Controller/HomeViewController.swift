@@ -73,7 +73,7 @@ extension HomeViewController{
             anchorVc.homeType = type
             childVcs.append(anchorVc)
         }
-        let pageView = LTBPageView(frame: pageFrame, titles: titles, titleStyle: style, childVcs: childVcs, parentVc: self)
+        let pageView = LTBPageView(frame: pageFrame, titles: titles, style: style, childVcs: childVcs, parentVc: self)
         view.addSubview(pageView)
     }
     
