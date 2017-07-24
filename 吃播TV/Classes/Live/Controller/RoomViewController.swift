@@ -43,6 +43,8 @@ class RoomViewController: UIViewController, Emitterable {
 extension RoomViewController {
     fileprivate func setupUI() {
         setupBlurView()
+        
+        setupBottomView()
     }
     
     fileprivate func setupBlurView() {

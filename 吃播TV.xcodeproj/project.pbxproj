@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		37C242911F25950A008447D2 /* QHNormalEmotionSort.plist in Resources */ = {isa = PBXBuildFile; fileRef = 37C2428F1F25950A008447D2 /* QHNormalEmotionSort.plist */; };
+		37C242921F25950A008447D2 /* QHSohuGifSort.plist in Resources */ = {isa = PBXBuildFile; fileRef = 37C242901F25950A008447D2 /* QHSohuGifSort.plist */; };
 		3BCA08225F652406A6E8CB45 /* Pods___TVTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DABDB0FF9C69318F387623BC /* Pods___TVTests.framework */; };
 		6D3194DA8FE52CDA5BB3A17B /* Pods___TVUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 893BBBD11E634C883BA850D5 /* Pods___TVUITests.framework */; };
 		84820C111F244CCD0071D417 /* types.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84820C101F244CCD0071D417 /* types.plist */; };
@@ -85,6 +87,8 @@
 /* Begin PBXFileReference section */
 		0DC5A264A6C353F6242D2862 /* Pods___TV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods___TV.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C8D95E7814467ECE33C8E36 /* Pods-吃播TV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-吃播TV.release.xcconfig"; path = "Pods/Target Support Files/Pods-吃播TV/Pods-吃播TV.release.xcconfig"; sourceTree = "<group>"; };
+		37C2428F1F25950A008447D2 /* QHNormalEmotionSort.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = QHNormalEmotionSort.plist; sourceTree = "<group>"; };
+		37C242901F25950A008447D2 /* QHSohuGifSort.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = QHSohuGifSort.plist; sourceTree = "<group>"; };
 		51FD80D9A12560B0E07C1877 /* Pods-吃播TVTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-吃播TVTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-吃播TVTests/Pods-吃播TVTests.debug.xcconfig"; sourceTree = "<group>"; };
 		54F79F22B4F2F6746A6B3615 /* Pods-吃播TVUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-吃播TVUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-吃播TVUITests/Pods-吃播TVUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		84820C101F244CCD0071D417 /* types.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = types.plist; sourceTree = "<group>"; };
@@ -207,6 +211,8 @@
 		84820C0F1F244CCD0071D417 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				37C2428F1F25950A008447D2 /* QHNormalEmotionSort.plist */,
+				37C242901F25950A008447D2 /* QHSohuGifSort.plist */,
 				84820C101F244CCD0071D417 /* types.plist */,
 			);
 			path = Resource;
@@ -580,6 +586,7 @@
 				TargetAttributes = {
 					84AF6EE31F1D0535004850AE = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = FH3L833Z7U;
 						ProvisioningStyle = Automatic;
 					};
 					84AF6EF71F1D0536004850AE = {
@@ -621,6 +628,8 @@
 			files = (
 				8483C2B11F2577F00019CB69 /* ChatToolsView.xib in Resources */,
 				8483C2B61F2577F00019CB69 /* GiftListView.xib in Resources */,
+				37C242911F25950A008447D2 /* QHNormalEmotionSort.plist in Resources */,
+				37C242921F25950A008447D2 /* QHSohuGifSort.plist in Resources */,
 				84AF6F271F1D0544004850AE /* Profile.storyboard in Resources */,
 				8483C2B41F2577F00019CB69 /* EmoticonViewCell.xib in Resources */,
 				84AF6F281F1D0544004850AE /* Rank.storyboard in Resources */,
@@ -683,7 +692,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		4E3B8CBC9D533F457E3A0108 /* [CP] Embed Pods Frameworks */ = {
@@ -751,7 +760,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		9A572D7FBCDB52F73EEFBD2B /* [CP] Check Pods Manifest.lock */ = {
@@ -769,7 +778,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		B66DB868D55A9BAFAF6944D6 /* [CP] Embed Pods Frameworks */ = {
@@ -998,6 +1007,7 @@
 			baseConfigurationReference = 8730AA72543A9CF28DED211B /* Pods-吃播TV.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = FH3L833Z7U;
 				INFOPLIST_FILE = "吃播TV/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dreamerjl.--TV";
@@ -1011,6 +1021,7 @@
 			baseConfigurationReference = 1C8D95E7814467ECE33C8E36 /* Pods-吃播TV.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = FH3L833Z7U;
 				INFOPLIST_FILE = "吃播TV/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dreamerjl.--TV";
